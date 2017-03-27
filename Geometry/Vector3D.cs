@@ -172,9 +172,9 @@ namespace Geometry
             double angle = Math.Acos(cosAngle);
             return inDegrees ? angle * 180.0 / PI : angle;
         }
-        public static double GetProjectionLength( Vector3D a, Vector3D vectorBase)
+        public static double GetProjectionLength( Vector3D a, Vector3D vectorBase )
         {
-            double dpResult = DotProduct(a,vectorBase);
+            double dpResult = DotProduct(a, vectorBase);
             return dpResult / vectorBase.Length;
         }
     }
